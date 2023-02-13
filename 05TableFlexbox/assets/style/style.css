@@ -1,0 +1,74 @@
+.header {
+    background-color: rgb(4, 92, 255);
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    background-color: rgb(255, 230, 4);
+    min-height: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.article {
+    background-color: rgb(4, 238, 255);
+    min-height: 370px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.image {
+    background-color: rgb(113, 4, 255);
+    min-height: 50px;
+    min-width: 48%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.imagelong {
+    background-color: rgb(113, 4, 255);
+    min-height: 50px;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px 5px 5px;
+}
+
+.aside {
+    background-color: rgb(213, 4, 255);
+    min-height: 50px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    background-color: rgb(4, 92, 255);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.link {
+    background-color: rgb(255, 176, 4);
+    min-height: 50px;
+    width: 20%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+font-size: 30px;
+}
