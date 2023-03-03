@@ -301,6 +301,9 @@ main {
     width: 100%;
     height: fit-content;
     padding-top: 3em;
+    position: fixed;
+    top: 3em;
+    left: 5em.
 }
 
 .footer__form {
