@@ -23,8 +23,8 @@
 .main__image {
     width: 20rem;
     height: 30rem;
-    background-image: url('../images/01.jpg'); /* первый вариант  url('assets');https://fatcatart.com/wp-content/uploads/2021/03/pussy-willow-cats-v-w.jpg*/
-    background-size: cover; /* первый вариант*/
+    background-image: url('../images/01.jpg');
+    background-size: cover;
 } 
 
 .main__btn-wrapper {
@@ -47,6 +47,5 @@
 }
 
 .main__btn:active {
-    /* outline: none; */
     box-shadow: 0 0 0 2px #b7b7b8;
 }
