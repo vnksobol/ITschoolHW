@@ -1,0 +1,52 @@
+*{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1.1rem;
+}
+
+.title {
+    font-size: 1.8rem;
+}
+
+.main, 
+.main__btn-part, 
+.main__btn-wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.main {
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__image {
+    width: 20rem;
+    height: 30rem;
+    background-image: url('../images/01.jpg'); /* первый вариант  url('assets');https://fatcatart.com/wp-content/uploads/2021/03/pussy-willow-cats-v-w.jpg*/
+    background-size: cover; /* первый вариант*/
+} 
+
+.main__btn-wrapper {
+    justify-content: center;
+}
+
+.main__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: black;
+    color: white;
+    height: 3rem;
+    width: 20%;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main__btn:active {
+    /* outline: none; */
+    box-shadow: 0 0 0 2px #b7b7b8;
+}
