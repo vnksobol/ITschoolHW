@@ -1,6 +1,7 @@
 *{
     font-family: Roboto, Arial, sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: 0.1rem;
 }
 
 .wrapper,
@@ -23,6 +24,7 @@
 }
 
 .header__title {
+    margin: 2rem 0 3rem;
     font-size: 1.8rem;
     font-weight: 600;
 }
@@ -63,6 +65,7 @@
 .main__title {
     display: grid;
     direction: column;
+    font-size: 1.1rem;
 }
 
 .main__text--subdominant {
@@ -71,16 +74,20 @@
 
 .main__price {
     grid-area: price;
+    justify-items: end;
+    padding: 1rem;
 }
 
 .main__text--accent {
-    color: rgb(52, 5, 192);
+    font-weight: 550;
+    color: rgb(227, 91, 12);
 }
 
 .footer,
 .button,
 .button-wrapper,
-.footer__text {
+.footer__text,
+.img {
     display: flex;
     flex-direction: row;
 }
@@ -113,10 +120,18 @@
     justify-content: flex-end;
     font-size: 1.6rem;
     font-weight: 600;
+    margin-top: 3rem;
 }
 
 .footer__text--accent {
     font-size: 1.4rem;
     font-weight: 600;
-    color: rgb(52, 5, 192);
+    color: rgb(227, 91, 12);
+}
+
+.img {
+    justify-self: center;
+    width: 7rem;
+    height: auto;
+    align-self: center;
 }
