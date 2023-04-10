@@ -9,8 +9,33 @@
     <title>Form for comments</title>
 </head>
 <body>
-    <H1>Сервис комментариев со стоп-фильтром</H1>
-    
+    <H1>
+        Сервис комментариев со спам-фильтром
+    </H1>
+    <H2>
+        Оставьте Ваш комментарий
+    </H2>
+    <form name="name">
+        <label>Введите ваши ФИО:
+            <br>
+            <input type="text" name="name" class="user-name"> 
+        </label>
+    </form>
+    <form name="photo">
+        <label>Введите ссылку Вашего аватара:
+            <br>
+            <input type="url" name="photo" class="user-photo"> 
+        </label>
+    </form>
+    <form name="comment">
+        <label>Введите Ваш комментарий:
+            <br>
+            <input type="text" name="comment" class="user-comment"> 
+        </label>
+    </form>
+    <br>        
+    <input type="submit" value="Отправить"> 
+
     <script src="assets/scripts/index.js"></script>    
 </body>
 </html>
