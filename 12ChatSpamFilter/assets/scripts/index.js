@@ -71,3 +71,13 @@ button.addEventListener('click', () => {
         <p class="chat-border">${checkSpamMessage}</p>`;
     message.innerHTML = totalString;
 });
+
+
+// //Попробовать второй способ выведения сообщения вместо innerHTML
+// let m = document.getElementById('m');
+// 	console.log(m.textContent); // Текст внутри элемента
+// 	m.textContent = 'Новый текст.';
+
+// Вывести преобразование сообщения до клика - пока выглядит нерациональным.
+
+// Заменить однотипные итерации с именем - не задача данного этапа.

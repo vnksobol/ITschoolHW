@@ -9,14 +9,19 @@
     <title>Form for comments</title>
 </head>
 <body>
+    <div class="root">
+    <header class="header">
     <h1>
         Сервис комментариев со спам-фильтром
     </h1>
+    </header>
+
+    <main class="main">
+    <section class="main__section-1">
     <h2 class="color">
         Оставьте Ваш комментарий
     </h2>
-
-    <form name="user">
+        <form name="user">
         <label>Введите ФИО:
             <br>
             <input type="text" name="name" class="user-name"> 
@@ -34,13 +39,15 @@
         <br><br>       
         <input type="button" value="Отправить" class="button" >
     </form>
-
-    <br><br>  
+    </section>
+    <section class="main__section-2">
         <h2 class="color">
             Чат
         </h2>
     <div class="message">
     </div>
+    </section>
+    </main>
 
     <script src="assets/scripts/index.js"></script>    
 </body>
