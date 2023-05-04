@@ -9,32 +9,38 @@
     <title>Form for comments</title>
 </head>
 <body>
-    <H1>
+    <h1>
         Сервис комментариев со спам-фильтром
-    </H1>
-    <H2>
+    </h1>
+    <h2 class="color">
         Оставьте Ваш комментарий
-    </H2>
-    <form name="name">
-        <label>Введите ваши ФИО:
+    </h2>
+
+    <form name="user">
+        <label>Введите ФИО:
             <br>
             <input type="text" name="name" class="user-name"> 
         </label>
-    </form>
-    <form name="photo">
-        <label>Введите ссылку Вашего аватара:
+        <br><br> 
+        <label>Введите ссылку на аватар:
             <br>
             <input type="url" name="photo" class="user-photo"> 
         </label>
-    </form>
-    <form name="comment">
-        <label>Введите Ваш комментарий:
+        <br><br> 
+        <label>Оставьте комментарий:
             <br>
             <input type="text" name="comment" class="user-comment"> 
         </label>
+        <br><br>       
+        <input type="button" value="Отправить" class="button" >
     </form>
-    <br>        
-    <input type="submit" value="Отправить"> 
+
+    <br><br>  
+        <h2 class="color">
+            Чат
+        </h2>
+    <div class="message">
+    </div>
 
     <script src="assets/scripts/index.js"></script>    
 </body>

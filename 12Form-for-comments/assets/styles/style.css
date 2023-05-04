@@ -1,0 +1,43 @@
+*{
+    background-color: rgb(27, 27, 27);
+    color: #e6e3e3;
+    font-family: Calibri, sans-serif;
+}
+
+.color {
+    color: rgb(56, 56, 253);
+}
+
+.user-comment,
+.chat-border {
+width: 25%;
+height: auto;
+min-height: 4rem;
+}
+
+.user-photo,
+.user-name,
+.user-comment {
+    border: 1px dashed rgb(56, 56, 253);
+}
+
+.user-picture {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.chat-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.chat-border {
+    border-bottom: 1px dashed rgb(56, 56, 253);
+}
+
+.button {
+    display: block;
+    background-color: rgb(56, 56, 253);
+    font-weight: 700;
+}
