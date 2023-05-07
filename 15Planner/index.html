@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Planner</title>
+</head>
+<body>
+    <div class="root">
+    <header class="header">
+    <h1>
+        Планировщик задач
+    </h1>
+    </header>
+
+    <main class="main">
+    <section class="main__section-1">
+        <h2 class="title">
+        Добавить задачу
+        </h2>
+        <div class="wrapper">
+            <div class="user-task">
+                <form name="user-info">
+                <input type="text" name="name" class="user-task" value="Задача"> 
+            </form>
+            </div>
+            <div class="button-wrapper">
+                <button class="button" id="btn">
+                    <span class="button-addtask">Добавить задачу</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="main__section-2">
+        <h2 class="title">
+            Список задач
+        </h2>
+        <div class="wrapper">
+            <div class="user-list">
+                <p class=""></p>
+                <!-- <input type="radio" name="a" value="m" class="color"></label> -->
+            </div>
+            <div class="button-wrapper">
+                <button class="button-accent" id="btn">
+                    <span class="button-accent, button-cleantask">Очистить список</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <script src="assets/scripts/index.js"></script>    
+</body>
+</html>
