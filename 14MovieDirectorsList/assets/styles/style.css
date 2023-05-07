@@ -7,14 +7,22 @@
 p {
     margin: 0%;
 }
-.title {
+.title1,
+.title2 {
     display: flex;
     justify-content: center;
     color: #e6e3e3;
-    font-family: Calibri, sans-serif;
+    padding: 1rem;
+}
+
+.title1 {
     font-size: 1.75rem;
     font-weight: 700;
-    padding: 1rem;
+}
+
+.title2 {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .wrapper {
@@ -85,7 +93,4 @@ p {
     justify-content: space-between;
     width: auto;
     height: auto;
-}
-.director__movie {
-
 }
