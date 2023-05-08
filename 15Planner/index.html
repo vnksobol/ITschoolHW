@@ -17,35 +17,36 @@
     </header>
 
     <main class="main">
-    <section class="main__section-1">
-        <h2 class="title">
+    <section class="section-1">
+        <h2>
         Добавить задачу
         </h2>
         <div class="wrapper">
-            <div class="user-task">
-                <form name="user-info">
-                <input type="text" name="name" class="user-task" value="Задача"> 
-            </form>
-            </div>
+            <!-- <div class="task"> -->
+                <!-- <form name="task-form"> -->
+                <input type="text" name="name" class="task" value="Задача"> 
+            <!-- </form> -->
+            <!-- </div> -->
             <div class="button-wrapper">
-                <button class="button" id="btn">
-                    <span class="button-addtask">Добавить задачу</span>
+                <button class="button" id="button-add">
+                    <span class="button-add">Добавить задачу</span>
                 </button>
             </div>
         </div>
     </section>
-    <section class="main__section-2">
-        <h2 class="title">
+    <section class="section-2">
+        <h2>
             Список задач
         </h2>
         <div class="wrapper">
-            <div class="user-list">
-                <p class=""></p>
-                <!-- <input type="radio" name="a" value="m" class="color"></label> -->
+            <div class="list">
+                <div class="list__item">Задача 1
+                    <input type="checkbox"/>
+                </div>
             </div>
             <div class="button-wrapper">
-                <button class="button-accent" id="btn">
-                    <span class="button-accent, button-cleantask">Очистить список</span>
+                <button class="button-accent" id="button-clean">
+                    <span class="button-clean">Очистить список</span>
                 </button>
             </div>
         </div>
