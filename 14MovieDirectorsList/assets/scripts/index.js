@@ -50,10 +50,10 @@ const directorsList = document.querySelector('.director');
 // В найденные элементы на странице добавить информацию из каждого элемента массива.
 // Создать элементы при помощи функции, разместить при помощи forEach.
 
-const createElement = (element, i) => {
+const Element = (element, i) => {
     const divDirector = document.createElement("div");
     divDirector.className = "director";
-    if (i % 2 == 0) {
+    if (i % 2 === 0) {
     divDirector.className = "director director_lined";
     }
     const divWrapperName = document.createElement("div");
@@ -79,7 +79,7 @@ const createElement = (element, i) => {
 
 // В функцию-обработчик добавить код, который относится к работе с DOM.
 getList.forEach((item, index) => {
-    const directorsDom = createElement(item, index);
+    const directorsDom = Element(item, index);
     directorsList.append(directorsDom);
     // console.log(item.name);
 });
@@ -94,7 +94,7 @@ const topFilmsList = getList.map(function (item) {
 // console.log(topFilmsList);
 
 // Создать новый элемент разметки для списка фильмов
-const createElement2 = (element, i) => {
+const Element2 = (element, i) => {
     const divTopFilm = document.createElement("div");
     divTopFilm.innerHTML = element;
     divTopFilm.className = "best-movies";
@@ -104,6 +104,6 @@ const createElement2 = (element, i) => {
 
 // В функцию-обработчик добавить код, который относится к работе с DOM.
 topFilmsList.forEach((item, index) => {
-    const topFilmDom = createElement2(item, index);
+    const topFilmDom = Element2(item, index);
     bestMoviesList.append(topFilmDom);
 });
