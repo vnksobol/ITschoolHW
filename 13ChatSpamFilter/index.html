@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Form for comments</title>
+</head>
+<body>
+    <div class="root">
+    <header class="header">
+    <h1>
+        Сервис комментариев со спам-фильтром
+    </h1>
+    </header>
+
+    <main class="main">
+    <section class="main__section-1">
+    <h2 class="color">
+        Оставить Ваш комментарий
+    </h2>
+        <form name="user">
+        <label>Показывать Ваше имя в комментарии: &nbsp;
+            да &nbsp;<input type="checkbox" name="agreement" class="user-yes" onchange="showYesNo()" id="elem"/>
+        </label>
+        <br><br> 
+        <label>Введите ФИО:
+            <br>
+            <input type="text" name="name" class="user-name" id="user-name"/> 
+        </label>
+        <br><br> 
+        <label>Введите ссылку на аватар:
+            <br>
+            <input type="url" name="photo" class="user-photo"/> 
+        </label>
+        <br><br> 
+        <label>Оставьте комментарий:
+            <br>
+            <input type="text" name="comment" class="user-comment"/> 
+        </label>
+        <br><br>       
+        <input type="button" value="Отправить" class="button"/>
+    </form>
+    </section>
+    <section class="main__section-2">
+        <h2 class="color">
+            Чат
+        </h2>
+    <div class="message">
+    </div>
+    <div class="date">
+    </div>
+    </section>
+    </main>
+
+    <script src="assets/scripts/index.js"></script>    
+</body>
+</html>

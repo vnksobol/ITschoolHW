@@ -1,0 +1,103 @@
+/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap" rel="stylesheet"> */
+
+.root {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(27, 27, 27);
+}
+
+*{
+    background-color: rgb(27, 27, 27);
+    color: #e6e3e3;
+    font-family: Calibri, sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: auto;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: auto;
+    justify-content: stretch;
+    margin: 2%;
+}
+
+.main__section-1 {
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    height: auto;
+    align-content: space-around;
+    align-items: start;
+    justify-items: start;
+}
+
+.main__section-2 {
+    display: flex;
+    width: 45vw;
+    height: auto;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: start;
+    justify-items: start;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+.color {
+    color: rgb(56, 56, 253);
+}
+
+.user-photo,
+.user-name,
+.user-comment {
+    border: 1px dashed rgb(56, 56, 253);
+    min-width: 35rem;
+    width: 100%;
+    height: auto;
+    min-height: 2rem;
+}
+
+.user-picture {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.chat-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.chat-date {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.chat-border {
+    border-bottom: 1px dashed rgb(56, 56, 253);
+    width: 100%;
+    height: auto;
+    min-height: 2rem;
+}
+
+.button {
+    display: block;
+    background-color: rgb(56, 56, 253);
+    font-weight: 700;
+}
+
+.message {
+    min-width: 35rem;
+}
