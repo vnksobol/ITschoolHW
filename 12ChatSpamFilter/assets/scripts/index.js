@@ -6,7 +6,7 @@ const userInputComment = document.querySelector('.user-comment');
 // Получить кнопку
 const button = document.querySelector('.button');
 
-// Получить доступ к месту выведению сообщения 
+// Получить доступ к месту выведения сообщения 
 const message = document.querySelector('.message');
 
 // Задать пустую строку для выведения в нее сообщения пользователя
