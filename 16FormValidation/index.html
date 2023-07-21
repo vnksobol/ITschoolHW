@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Form Validation</title>
+    <!-- <style> -->
+        <!-- /* input:valid {
+            border-color: green;
+        } */
+       /* input:invalid {
+            border-color: red;
+        } */
+    /* </style> */ -->
+</head>
+<body>
+    <div class="root">
+    <!-- <header class="header">
+    <h1 class="accent-color">
+        Форма с валидацией
+    </h1>
+    </header> -->
+<!-- добавить в форм как в лекции ноувалидейт? -->
+    <main class="main">
+        <h1 class="title">Registration Form</h1>
+        <section class="section">
+        <form  class="form" novalidate>
+            <div>
+                <label for="firstName" class="form__label">
+                    First Name<span class="color-accent">* </span>
+                </label>
+                <input type="text" id="firstName" placeholder="Your name" minlength="2" maxlength="20" required/>
+            </div>
+            <!-- <div>
+                <button>OK
+                </button>
+            </div> -->
+            <div>
+                <label for="email" class="form__label">
+                    Email<span class="color-accent">* </span>
+                </label>
+                <input type="email" id="email" placeholder="Your email" pattern="/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i" required/>
+            </div>
+            <!-- <div>
+                <button>OK
+                </button>
+            </div> -->
+            <div>
+                <label for="age" class="form__label">
+                    Age<span class="color-accent">* </span>
+                </label>
+                <input type="number" placeholder="Your age" min=14 max=100 required/>
+            </div>
+            <!-- <div>
+                <button>OK
+                </button>
+            </div> -->
+            <div>
+                <label for="sex" class="form__label">
+                    Gender: 
+                </label> 
+                <input type="radio" id=""/> male
+                <input type="radio" id=""/> female
+            </div>
+            <!-- <div>
+                <button>OK
+                </button>
+            </div> -->
+            <div>
+                <label for="firstName" class="form__label">
+                    Occupation<span class="color-accent">* </span>
+                </label>
+                <select id="" placeholder="Select" required>
+                    <option value="">Salesman</option>
+                    <option value="">Designer</option>
+                    <option value="">Programmer</option>
+                    <option value="">Teacher</option>
+                    <option value="">Doctor</option>
+                    <option value="">Engineer</option>
+                    <option value="">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="password" class="form__label">
+                    Password<span class="color-accent">* </span>
+                </label>
+                <input type="text" id="" placeholder="Password" minlength="8" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,20}$/" required/>
+            </div>
+            <!-- <div>
+                <button>OK
+                </button>
+            </div> -->
+            <div>
+                <label for="password" class="form__label">
+                    Confirm Password<span class="color-accent">* </span>
+                </label>
+                <input type="text" id="" placeholder="Re-type Password" minlength="8" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,20}$/" required/>
+            </div>
+            <!-- <div>
+                <button>OK
+                </button>
+            </div> -->
+            <div>
+                <input type="checkbox" required/> 
+                    I agree to the terms and conditions<span class="color-accent">* </span>
+            </div>
+            <!-- <label for="tel" class="form__label">Телефон:</label>
+            <input type="tel" id="phone" placeholder="Телефон" pattern="гуглить"/>
+            <div>
+                <button>OK
+                </button>
+            </div> -->
+            <div>
+                <!-- <input type="button" id="phone" onclick=check all()/> -->
+                <!-- <div> -->
+                    <button class="button">
+                        Submit
+                    </button>
+                <!-- </div> -->
+                <div id="errorsInfo">
+                    <!-- массив с ошибками -->
+                </div>
+            </div>
+        </form>
+        </section>
+    </main>
+
+    <script src="assets/scripts/index.js"></script>    
+</body>
+</html>
