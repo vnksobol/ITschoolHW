@@ -7,124 +7,93 @@
     <link rel="stylesheet" href="assets/styles/normalize.css" />
     <link rel="stylesheet" href="assets/styles/style.css" />
     <title>Form Validation</title>
-    <!-- <style> -->
-        <!-- /* input:valid {
-            border-color: green;
-        } */
-       /* input:invalid {
-            border-color: red;
-        } */
-    /* </style> */ -->
 </head>
 <body>
     <div class="root">
-    <!-- <header class="header">
-    <h1 class="accent-color">
-        Форма с валидацией
-    </h1>
-    </header> -->
-<!-- добавить в форм как в лекции ноувалидейт? -->
     <main class="main">
-        <h1 class="title">Registration Form</h1>
+        <h1 class="title">
+            Registration Form
+        </h1>
         <section class="section">
-        <form  class="form" novalidate>
-            <div>
-                <label for="firstName" class="form__label">
-                    First Name<span class="color-accent">* </span>
-                </label>
-                <input type="text" id="firstName" placeholder="Your name" minlength="2" maxlength="20" required/>
-            </div>
-            <!-- <div>
-                <button>OK
-                </button>
-            </div> -->
-            <div>
-                <label for="email" class="form__label">
-                    Email<span class="color-accent">* </span>
-                </label>
-                <input type="email" id="email" placeholder="Your email" pattern="/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i" required/>
-            </div>
-            <!-- <div>
-                <button>OK
-                </button>
-            </div> -->
-            <div>
-                <label for="age" class="form__label">
-                    Age<span class="color-accent">* </span>
-                </label>
-                <input type="number" placeholder="Your age" min=14 max=100 required/>
-            </div>
-            <!-- <div>
-                <button>OK
-                </button>
-            </div> -->
-            <div>
-                <label for="sex" class="form__label">
-                    Gender: 
-                </label> 
-                <input type="radio" id=""/> male
-                <input type="radio" id=""/> female
-            </div>
-            <!-- <div>
-                <button>OK
-                </button>
-            </div> -->
-            <div>
-                <label for="firstName" class="form__label">
-                    Occupation<span class="color-accent">* </span>
-                </label>
-                <select id="" placeholder="Select" required>
-                    <option value="">Salesman</option>
-                    <option value="">Designer</option>
-                    <option value="">Programmer</option>
-                    <option value="">Teacher</option>
-                    <option value="">Doctor</option>
-                    <option value="">Engineer</option>
-                    <option value="">Other</option>
-                </select>
-            </div>
-            <div>
-                <label for="password" class="form__label">
-                    Password<span class="color-accent">* </span>
-                </label>
-                <input type="text" id="" placeholder="Password" minlength="8" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,20}$/" required/>
-            </div>
-            <!-- <div>
-                <button>OK
-                </button>
-            </div> -->
-            <div>
-                <label for="password" class="form__label">
-                    Confirm Password<span class="color-accent">* </span>
-                </label>
-                <input type="text" id="" placeholder="Re-type Password" minlength="8" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,20}$/" required/>
-            </div>
-            <!-- <div>
-                <button>OK
-                </button>
-            </div> -->
-            <div>
-                <input type="checkbox" required/> 
-                    I agree to the terms and conditions<span class="color-accent">* </span>
-            </div>
-            <!-- <label for="tel" class="form__label">Телефон:</label>
-            <input type="tel" id="phone" placeholder="Телефон" pattern="гуглить"/>
-            <div>
-                <button>OK
-                </button>
-            </div> -->
-            <div>
-                <!-- <input type="button" id="phone" onclick=check all()/> -->
-                <!-- <div> -->
-                    <button class="button">
+            <form  name="form" class="form" novalidate>
+                <div>
+                    <label for="firstName" class="form__label">
+                        First Name<span class="color-accent">* </span>
+                    </label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Your name" minlength="2" maxlength="20" required/>
+                    <p class="hint">
+                        <span id="errorName" class="error">
+                        </span>
+                        2-20 letters, spacebar
+                    </p>            
+                </div>
+                <div>
+                    <label for="email" class="form__label">
+                        Email<span class="color-accent">* </span>
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="Your email" pattern="/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i" required/>
+                        <span id="errorEmail" class="error">
+                        </span>
+                </div>
+                <div>
+                    <label for="age" class="form__label">
+                        Age<span class="color-accent">* </span>
+                    </label>
+                    <input type="number" id="age" name="age" placeholder="Your age" min=14 max=100 required/>
+                </div>
+                <div>
+                    <label for="gender" class="form__label">
+                        Gender: 
+                    </label> 
+                    <input type="radio" id="genderM" name="gender"/> male
+                    <input type="radio" id="genderF" name="gender"/> female
+                </div>
+                <div>
+                    <label for="occupation" class="form__label">
+                        Occupation<span class="color-accent">* </span>
+                    </label>
+                    <select id="occupation" name="occupation" placeholder="Select" required>
+                        <option value="Salesman">Salesman</option>
+                        <option value="Designer">Designer</option>
+                        <option value="Programmer">Programmer</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="Engineer">Engineer</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <p class="hint">
+                        <span id="errorName" class="error">
+                        </span>
+                    </p> 
+                </div>
+                <div>
+                    <label for="password1" class="form__label">
+                        Password<span class="color-accent">* </span>
+                    </label>
+                    <input type="text" id="password" name="password" placeholder="Password" minlength="8" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,20}$/" required/>
+                </div>
+                <div>
+                    <label for="passwordConfirm" class="form__label">
+                        Confirm Password<span class="color-accent">* </span>
+                    </label>
+                    <input type="text" id="confirmPassword" name="confirmPassword" placeholder="Re-type Password" minlength="8" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,20}$/" required/>
+                </div>
+                <div>
+                    <input type="checkbox" id="agreement" name="agreement" required/> 
+                    <label for="agreement" class="form__label">
+                        I agree to the terms and conditions<span class="color-accent">* </span>
+                    </label>
+                </div>
+                <div>
+                    <p id="errorInfo" class="error">
+                    </p>
+                </div>
+                <div>
+                    <button type="submit" class="button"  id="button" onclick=checkAll()>
                         Submit
                     </button>
-                <!-- </div> -->
-                <div id="errorsInfo">
-                    <!-- массив с ошибками -->
                 </div>
-            </div>
-        </form>
+            </form>
         </section>
     </main>
 

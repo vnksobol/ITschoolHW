@@ -82,11 +82,17 @@ input:valid, select:valid {
     /* outline: 2px solid deepskyblue; */
     border-color: green;
     accent-color: green;
-    select: green;
+    /* select: green; */
 }
-/* input:invalid {
+
+.hint {
+    color: rgb(95, 95, 95);
+}
+
+.error {
     border-color: red;
-} */
+    color: red;
+}
 
 /* input:valid + span::before {
     content: "✓";
