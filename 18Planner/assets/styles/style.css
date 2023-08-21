@@ -1,0 +1,117 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap" rel="stylesheet">
+
+.root {
+    display: flex;
+    align-content: center;
+    flex-flow: column wrap;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+}
+
+*{
+    /* background-color: rgb(148, 148, 148); */
+    background-color: rgb(250, 250, 250);
+    color: #020202;
+    font-family: Calibri, sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: auto;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    justify-content: stretch;
+    margin: 2%;
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-content: space-around;
+    align-items: start;
+    justify-items: start;
+}
+
+.section-2 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: start;
+    justify-items: start;
+}
+
+.wrapper,
+.task {
+display: flex;
+flex-direction: column;
+align-items: stretch;
+align-content: center;
+}
+
+.list {
+    min-width: 35rem;
+}
+
+.task,
+.list__item {
+    /* display: flex;
+    flex-direction: row;
+    align-items: space-around; */
+    border: 1px solid rgb(139, 139, 139);
+    border-radius: 5px;
+    min-width: 35rem;
+    color: dimgray;
+    margin-top: 1rem;
+} 
+
+.button,
+.button-accent {
+    display: block;
+    font-weight: 550;
+    min-height: 4rem;
+    min-width: 10rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.button-wrapper {
+    display: flex;
+    align-self: flex-end;
+}
+
+.button,
+.button-add {
+    background-color: rgb(250, 139, 35);
+}
+
+.button-accent,
+.button-clear {
+    background-color: rgb(196, 196, 196);
+}
+
+.list__item-notask {
+    border: none;
+    color: dimgray;
+    font-size: 1rem;
+    display: flex;
+    align-content: space-around;
+}
+
+input:valid, select:valid {
+    border-color: rgb(250, 139, 35);
+    accent-color: rgb(250, 139, 35);
+}
